@@ -34,7 +34,7 @@ searchButton.addEventListener('click', async event => {
         alert('Find a real place friend!')
     }
 
-    // object {}
+    // location is an object {}
     const location = locationJSON[0];
     const lat = location.lat;
     const lon = location.lon;
@@ -75,30 +75,6 @@ searchButton.addEventListener('click', async event => {
     cityNameEl.textContent = weatherJson.city.name
     newLocation.appendChild(cityNameEl)
     searchHistory.appendChild(newLocation)
-    
-    // handle adding current weather to page
-    let current = document.createElement('div')
-    current.setAttribute('class', 'current-days-weather')
-    current.appendChild(cityNameEl)
-
-    console.log(weatherJson);
-    
-    // date
-    let currentDate = document.createElement('p')
-    
-    // icon
-    let currentIcon = document.createElement('p')
-   
-    // temperature
-    let currentTemp = document.createElement('p')
-    
-    // humidity
-    let currentHumidity = document.createElement('p')
-   
-    // wind speed
-    let currentWindSpeed = document.createElement('p')
-    
-    currentWeatherContainer.appendChild(current)
 
 })
 
@@ -106,4 +82,33 @@ searchButton.addEventListener('click', async event => {
 function renderWeatherData(weatherObject) {
   console.log('rendering weather data');
 
+}
+
+// TODO: create function to render localstorage history locations onto the screen for initial pageload and for when we change localstorage
+
+// TODO: create function to draw current and 5 day forecast for a location on the screen, so we can do it when we search and when we click on something in the history
+function drawWeather() {
+  // // handle adding current weather to page
+  // let current = document.createElement('div')
+  // current.setAttribute('class', 'current-days-weather')
+  // current.appendChild(cityNameEl)
+
+  // console.log(weatherJson);
+  
+  // // date
+  // let currentDate = document.createElement('p')
+  
+  // // icon
+  // let currentIcon = document.createElement('p')
+  
+  // // temperature
+  // let currentTemp = document.createElement('p')
+  
+  // // humidity
+  // let currentHumidity = document.createElement('p')
+  
+  // // wind speed
+  // let currentWindSpeed = document.createElement('p')
+  
+  // currentWeatherContainer.appendChild(current)
 }
