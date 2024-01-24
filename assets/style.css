@@ -1,37 +1,111 @@
+/* css reset */
 * {
   margin: 0;
   padding: 0;
 }
 
-#header {
-    border: 1px solid black;
-    width: 100%;
-    padding: 2px;
+body {
+  background-color: #57473e;
 }
 
-body {
-  display: flex;
+button {
+  font-size: large;
+  background-color: #2e2520;
+  color: bisque;
+  padding: 4px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+button:hover {
+  background-color: #cba791;
+  color: #2e2520;
+  box-shadow: 10px 0px 10px 0px;
+  cursor: pointer;
+}
+
+#header {
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: #cba791;
+    padding: 20px;
+    text-align: center;
+}
+
+#city-search-box {
+  font-size: larger;
+  background-color: bisque;
+  border-radius: 10px;
 }
 
 #search-container {
+  font-size: large;
   flex-direction: left;
-  border: 1px solid black;
+  border-radius: 10px;
+  width: 30%;
   height: 100%;
-  width: 33%;
   padding: 2px;
+  background-color: #cba791;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 10px 0px 10px 0px;
+}
+
+#search-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-in-history {
+  border: 2px solid #57473e;
+  background-color: #57473e;
+  color: bisque;
+  border-radius: 10px;
+  margin: 4px;
+  width: 60%;
+}
+
+.location-in-history:hover {
+  background-color: #cba791;
+  color: #2e2520;
+  box-shadow: 10px 0px 10px 0px;
+  cursor: pointer;
 }
 
 #display-container {
-  border: 1px solid black;
+  font-size: x-large;
   height: 50%;
-  width: 66%;
+  width: 60%;
   padding: 2px;
+  background-color: #cba791;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 10px 0px 10px 0px;
 }
 
-#day-forcast-container {
-  border: 1px solid black;
-  height: 50%;
-  width: 66%;
-  padding: 2px;
+#search-inline {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+#five-day-forecast-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50%;
+  padding: 10px;
+
+}
+
+.five-day-card {
+  /* border: 1px solid black; */
+  background-color: #cba791;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 10px 0px 10px 0px;
 }

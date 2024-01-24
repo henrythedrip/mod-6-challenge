@@ -8,14 +8,18 @@
 </head>
 <body>
     <h1 id="header">5-Day Weather Friend</h1>
-    <div id="search-container">
-      <h2>Search For a City</h2>
-      <input type="text" name="city-search" id="city-search-box">
-      <button id="search-submit">Search</button>
-      <div id="search-history"></div>
+    <div id="search-inline">
+      <div id="search-container">
+        <h2>Search For a City</h2>
+        <input type="text" name="city-search" id="city-search-box">
+        <button id="search-submit">Search</button>
+        <button id="clear-local-storage">Clear Local Storage</button>
+        <div id="search-history"></div>
+      </div>
+      <div id="display-container"></div>
     </div>
-    <div id="display-container"></div>
-    <div id="day-forcast-container"></div>
+    
+    <div id="five-day-forecast-container"></div>
     <script src="./assets/script.js"></script>
 </body>
 </html>
